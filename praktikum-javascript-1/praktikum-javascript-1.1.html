@@ -1,0 +1,33 @@
+<!--Menghitung Luas dan keliling lingkaran-->
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <script>
+        function calculate() {
+            const PHI = 3.14
+            let radius = document.getElementById("radius").value
+            let luas = PHI * radius ** 2
+            let keliling = 2.0 * PHI * radius
+            console.log("Radius : " + radius)
+            console.log("Luas : " + luas)
+            console.log("Keliling = " + keliling)
+            let hasil = document.getElementById("hasil")
+            hasil.innerHTML = `Luas : ${luas} <br>
+            Keliling : ${keliling}`
+        }
+    </script>
+    <title>Menghitung Luas dan Keliling Lingkaran - Anggi Alfian - Teknik Informatika 17</title>
+</head>
+
+<body>
+    <h3>Menghitung Luas dan Keliling Lingkaran</h3>
+    Masukan Radius Lingkaran :
+    <input type="number" value="" size="10" id="radius"> <br>
+    <button onclick="calculate()">Calculate</button> <br>
+    Hasil : <br>
+    <span id="hasil"></span>
+</body>
+
+</html>

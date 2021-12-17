@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input {
+            height: 10vh;
+            width: 99vw;
+            font-size: 7vh;
+        }
+        
+    </style>
+    <script>
+        function hitung() {
+            let angka1 = document.getElementById("bilangan1").value;
+            let angka2 = document.getElementById("bilangan2").value;
+            let total = (parseInt(angka1))+(parseInt(angka2))
+            
+            let total_hitung = document.getElementById("hasil")
+            total_hitung.innerHTML = total
+        }
+    </script>
+    <title>Menghitung Jumlah Dua Bilangan - Anggi Alfian - Teknik Informatika 17</title>
+</head>
+
+<body>
+    <input type="number" id="bilangan1" value="" size="10"> <br>
+    <h1>+</h1>
+    <input type="number" id="bilangan2" value="" size="10"> <br>
+    <h1>=</h1>
+    <button onclick="hitung()">Calculate</button> <br>
+    <span id="hasil"></span>
+</body>
+
+</html>

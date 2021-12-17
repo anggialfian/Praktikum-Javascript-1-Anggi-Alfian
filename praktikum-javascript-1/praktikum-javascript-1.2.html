@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        h1 {
+            background-color: orange;
+            color: navy;
+            text-align: center;
+        }
+        #hasil {
+            background-color: navy;
+            color: yellow;
+        }
+    </style>
+    <script>
+        function dollar() {
+            let input = document.getElementById("inputrupiah").value
+            const idr = 14650
+            const usd = 1
+            let currency = input / idr
+            console.log(`${idr} Rupiah = ${usd} Dollar USD`)
+            console.log(`Input Rupiah : ${input}`)
+            console.log(`${input} Rupiah = ${currency.toFixed(2)} Dollar USD`)
+            let hasil = document.getElementById("hasil")
+            hasil.innerHTML = `${input} Rupiah = ${currency.toFixed(2)} Dollar USD`
+        }
+    </script>
+    <title>Menhitung Kurs Rupiah - Anggi Alfian - Teknik Informatika 17</title>
+</head>
+
+<body>
+    <h1>Menghitung Kurs Dollar Terhadap Rupiah</h1>
+    Masukkan Nilai Rupiah :
+    <input type="number" id="inputrupiah" value="" size="10">
+    <button onclick="dollar()">Convert Currency</button> <br> <br>
+    <h1 id="hasil"></h1>
+</body>
+
+</html>
